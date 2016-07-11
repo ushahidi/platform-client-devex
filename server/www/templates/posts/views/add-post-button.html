@@ -12,10 +12,13 @@
     <ul class="fab-options" ng-show="fabToggle" ng-class="{ 'active': fabToggle }" ng-style="fabOptionsStyle" data-toggle-animate="flex">
         <li ng-repeat="form in forms">
             <a ng-href="/posts/create/{{form.id}}">
-                <span class="fab-action-type" style="background-color: {{form.color}};">
-                    <svg class="iconic">
-                        <use xlink:href="../../img/iconic-sprite.svg#file"></use>
-                    </svg>
+                <span class="fab-action-type" style="
+                    background-color: {{form.color}};
+                    background-image: url(../../img/goals/E_SDG_Icons-{{ form.id-1 }}.jpg);
+                    background-size: 50px;
+                    background-position: bottom center;
+                ">
+                    <svg class="iconic"></svg>
                 </span>
                 <span class="bug">{{form.name}}</span>
             </a>

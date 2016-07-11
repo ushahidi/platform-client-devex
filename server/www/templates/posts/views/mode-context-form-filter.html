@@ -1,7 +1,8 @@
 <form class="survey-filter">
-    <div class="survey-filter-checkbox init" ng-class="{ checked : (filters.form.indexOf(form.id) !== -1) }" ng-repeat="form in forms" dropdown>
+    <div class="survey-filter-checkbox init" ng-class="{ checked : (filters.form.indexOf(form.id) !== -1) }" ng-repeat="form in forms" style="background: url(../../img/goals/E_SDG_Icons-{{ form.id-1 }}.jpg) 0/40px no-repeat; padding-left: 30px;
+                    " dropdown>
         <div class="survey-filter-label">
-            <span class="post-band" style="background-color: {{form.color}};"></span>
+            <!-- <span class="post-band" style="background-color: {{form.color}};"></span> -->
             <label class="checked">
                 <input type="checkbox" checklist-value="form.id" checklist-model="filters.form" >
                 {{ ::form.name }}
