@@ -9,7 +9,7 @@
         <span class="hidden">Add</span>
     </button>
 
-    <ul class="fab-options" ng-show="fabToggle" ng-class="{ 'active': fabToggle }" ng-style="fabOptionsStyle" data-toggle-animate="flex">
+    <ul class="fab-options" ng-show="fabToggle" ng-class="{ 'active': fabToggle }" ng-style="fabOptionsStyle" data-toggle-animate="flex" style="max-height: 450px;">
         <li ng-repeat="form in forms">
             <a ng-href="/posts/create/{{form.id}}">
                 <span class="fab-action-type" style="
